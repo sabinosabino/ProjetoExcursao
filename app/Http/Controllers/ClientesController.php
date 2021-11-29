@@ -13,7 +13,7 @@ class ClientesController extends Controller
      */
     public function index()
     {
-        return view('Clientes.home');
+        return view('Clientes.Home');
     }
 
     /**
@@ -23,7 +23,7 @@ class ClientesController extends Controller
      */
     public function create()
     {
-        return view('Clientes.create');
+        return view('Clientes.Create');
     }
 
     /**
