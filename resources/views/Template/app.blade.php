@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Excursões</title>
     <link rel="stylesheet" href="{{asset('site/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('site/app.css')}}">
 </head>
 <body>
     <div class="contect">
