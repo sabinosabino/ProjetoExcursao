@@ -1,7 +1,33 @@
 body{
-    background-color: grey;
+    background-color: #f1efef;
 }
 
-.form{
-    max-width: 100px;
+
+.contect{
+    padding-top: 60px;
+    max-width: 80%;
 }
+
+form{
+    background-color: white;
+    /*raduis*/
+    border: 2px solid rgb(197, 197, 197);
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 8px 8px 8px gray; /* blur de 10px e deslocamento à direita de 15px. */
+
+}
+
+.imagem60{
+    height: 150px;
+    width: 120px;
+    border: solid 0.5px;
+    border-color: gray;
+    margin-bottom: 20px;
+}
+form button{
+    margin-left: 1.8%;
+}
+
+
+  
