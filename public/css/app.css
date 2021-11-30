@@ -1,11 +1,17 @@
 body{
     background-color: #f1efef;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 
 .contect{
     padding-top: 60px;
     max-width: 80%;
+}
+
+form div{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 form{
