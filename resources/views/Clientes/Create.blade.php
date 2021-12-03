@@ -159,7 +159,11 @@
         <div class="col-md-3">
             <label for="sexo">Sexo</label>
             <select class="form-control" name="sexo" id="sexo">
-                <option value="0">Option</option>
+                <option value="0">Selecione...</option>
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+                <option value="N">Não Binário</option>
+
             </select>
         </div>
 

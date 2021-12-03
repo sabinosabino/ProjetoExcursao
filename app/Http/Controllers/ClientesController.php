@@ -2,10 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Models\Clientes\clientes;
 use Illuminate\Http\Request;
+
+use function GuzzleHttp\Promise\all;
 
 class ClientesController extends Controller
 {
+    private $objClientes;
+    public function __construct()
+    {
+        $this->objCliente=new clientes();
+    }
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +21,8 @@ class ClientesController extends Controller
      */
     public function index()
     {
-        return view('Clientes.Home');
+        $clientes = $this->objCliente->all();
+        return view('Clientes.Index',compact('clientes'));
     }
 
     /**

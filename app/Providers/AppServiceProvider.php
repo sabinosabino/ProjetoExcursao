@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use illuminate\support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +24,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        //SEGUNDO VÍDEO https://youtu.be/h_Sd33pKSdg?list=PLbnAsJ6zlidsbjXqTWQhbnKibzl69LQar POR CAUSA DE LIMITE NOS CAMPOS
+        
     }
 }

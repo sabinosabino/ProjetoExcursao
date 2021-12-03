@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Models;
+namespace App\Models\Models\Clientes;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Clientes extends Model
+class clientes extends Model
 {
-    use HasFactory;
+    protected $table='clientes';
 }
