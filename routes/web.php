@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ClientesController;
+use App\Http\Controllers\AssinantesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,4 @@ Route::get('/', function () {
 
 //Rotas sistema abaixo
 Route::resource('Clientes', ClientesController::class);
+Route::resource('Assinantes', AssinantesController::class);
