@@ -15,21 +15,22 @@ class CreateAssinantesTable extends Migration
     {
         Schema::create('assinantes', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('nome');
-            $table->string('cnpj');
-            $table->string('endereco');
+            $table->string('nome', 100);
+            $table->string('cnpj', 20);
+            $table->string('endereco', 100);
             $table->integer('numero');
-            $table->string('complemento');
-            $table->string('bairro');
-            $table->string('cidade');
+            $table->string('complemento', 30);
+            $table->string('bairro', 100);
+            $table->string('cidade', 100);
             $table->string('uf');
             $table->string('cep');
-            $table->string('nomereponsavel');
-            $table->string('cpfresponsavel');
-            $table->string('rgresponsavel');
-            $table->string('telefone1');
-            $table->string('telefone2');
-            $table->string('email');
+            $table->string('nomeresponsavel', 100);
+            $table->string('cpfresponsavel', 100);
+            $table->string('rgresponsavel',  15);
+            $table->string('telefone1', 20);
+            $table->string('telefone2', 20);
+            $table->string('email', 100);
+            $table->text('obs');
             $table->timestamps();
         });
     }

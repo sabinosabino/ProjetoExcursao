@@ -2,10 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Assinantes\Assinantes;
 use Illuminate\Http\Request;
 
 class AssinantesController extends Controller
 {
+
+    //criar um atributo do tipo obj
+    private $objAssinantes;
+
+    //criar um contrutor
+    //ao chamar o controle temos acesso ao objeto
+    public function __construct()
+    {
+        $this->objAssinantes = new Assinantes();
+    }
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +24,10 @@ class AssinantesController extends Controller
      */
     public function index()
     {
-        //
+        $assinantes = $this->objAssinantes->all();
+
+        //compacte cria um array com variáveis e seus valores
+        return view("Assinantes.index", compact('assinantes'));
     }
 
     /**
@@ -45,7 +59,7 @@ class AssinantesController extends Controller
      */
     public function show($id)
     {
-        //
+        
     }
 
     /**
@@ -56,7 +70,8 @@ class AssinantesController extends Controller
      */
     public function edit($id)
     {
-        //
+        $assinantes = $this->objAssinantes->find($id);
+        return view('assinantes.edit', compact('assinantes'));
     }
 
     /**
